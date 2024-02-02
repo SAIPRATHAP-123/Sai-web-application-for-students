@@ -1,0 +1,47 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-profile text-center"> <!-- Added 'text-center' class to center the content -->
+            <div class="card-body">
+                <h6 class="card-category text-gray">SAI is requesting You, The External server is Under maintenance</h6>
+                <br>
+                <div style="border: 1px solid #000000; padding: 10px; background: linear-gradient(to right, blue, green); color: white;">
+                <b><marquee>Please, Check your Internet connection networks</marquee></b>
+                </div>
+                </br>
+                {% comment %} <h4 class="card-title"> {% endcomment %}
+                    {% comment %} Sorry for the inconvenience, but we are performing some maintenance at the moment. We'll be back online shortly! {% endcomment %}
+                {% comment %} </h4> {% endcomment %}
+                <div class="btn-box"> <!-- Added a container div for the "Home" button -->
+                    <a href="/" class="btn btn-primary btn-round">Home</a>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+<style>
+    /* Custom CSS for the "Home" button */
+    .btn-box {
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    .btn-box a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .btn-box a:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+</style>
+
+
+{% endblock content %}
